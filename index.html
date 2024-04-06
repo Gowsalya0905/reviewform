@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="./index.css" />
+	</head>
+	<body>
+		<div class="body">
+			<div class="navigator">
+				<img
+					src="image.jpeg"
+					alt="logo" />
+				<h1>COLLEGE FEEDBACK FORM</h1>
+			</div>
+			<div class="middle">
+				<h2 class="feedback1">Feedback Form</h2>
+				<form
+					onsubmit="submitData(event)"
+					id="feedback-form">
+					<label for="firstame">First Name: </label>
+					<input
+						type="text"
+						name="firstname"
+						id="firstname"
+						placeholder="Enter first name"
+						
+						required /><br />
+					<label for="lastname">Last Name: </label>
+					<input
+						type="text"
+						name="lastname"
+						id="lastname"
+						placeholder="Enter last name"
+						required /><br />
+					<label for="email">Email: </label>
+					<input
+						type="text"
+						name="email"
+						id="email"
+						placeholder="Enter Email Address"
+						required /><br />
+					<p>Gender:</p>
+					<input
+						type="radio"
+						name="gender"
+						id="gender"
+						value="Male"
+						required />
+					<label for="Male">Male</label>
+					<input
+						type="radio"
+						name="gender"
+						id="gender"
+						value="female" />
+					<label for="female">Female </label>
+					<input
+						type="radio"
+						name="gender"
+						id="gender"
+						value="others" />
+					<label for="others">others</label><br />
+					<label for="mobilenum">Contact Number: </label>
+					<input
+						type="number"
+						name="mobilenum"
+						id="mobilenum"
+						placeholder="Enter mobile Number"
+						required /><br />
+					<label for="Departments">Department: </label>
+					<select
+						id="departments"
+						required>
+						<option value="Electronics and Communication Enginnering">
+							Electronics and Communication Enginnering
+						</option>
+						<option value="Computer Science and Engineering">
+							Computer Science Engineering
+						</option>
+						<option value="Artificial intelligence and Data Science">
+							Artificial intelligence and Data Science
+						</option>
+						<option value="Mechanical Engineering">
+							Mechanical Engineering
+						</option>
+						<option value="Civil Engineering">Civil Engineering</option>
+					</select>
+					<br />
+					<label for="feedback">Share Your Feedback:</label><br />
+					<textarea
+						name="feedback"
+						id="feedback"
+						cols="30"
+						rows="5"
+						required></textarea>
+					<br />
+					<div class="submit">
+						<input
+							type="submit"
+							name="submit"
+							id="button" />
+					</div>
+				</form>
+			</div>
+			<div class="second">
+				<h2 class="table-head">Feedback Details</h2>
+				<table id="table">
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Gender</th>
+						<th>Mobile Number</th>
+						<th>Department</th>
+						<th>Feedback</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script src="./demo.js"></script>
+	</body>
+</html>
